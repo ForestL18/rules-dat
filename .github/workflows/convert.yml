@@ -1,0 +1,64 @@
+name: Convert Ruleset to MRS
+on:
+  #push:
+  #branches:
+  #- ruleset
+  workflow_dispatch:
+  schedule:
+    - cron: "0 17 * * *"
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: mihomo  # 检出 mihomo 分支
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      - name: Checkout ForestL18/meta-rules-converter
+        uses: actions/checkout@v4
+        with:
+          repository: ForestL18/meta-rules-converter
+          ref: Alpha
+          path: convert
+
+      - name: Convert asn
+        run: |
+          cd convert
+          wget https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb
+          go run ./ asn -o ../asn
+
+      - name: Combine asn
+        run: |
+          cd convert
+          wget https://raw.githubusercontent.com/ForestL18/ASN/main/China-ASN.list
+          wget https://raw.githubusercontent.com/ForestL18/ASN/main/Generic-ASN/Telegram-ASN.list
+          wget https://raw.githubusercontent.com/ForestL18/ASN/main/Generic-ASN/Google-ASN.list
+          wget https://raw.githubusercontent.com/ForestL18/ASN/main/Generic-ASN/Netflix-ASN.list
+          wget https://raw.githubusercontent.com/ForestL18/ASN/main/Generic-ASN/Twitter-ASN.list
+          wget https://raw.githubusercontent.com/ForestL18/ASN/main/Generic-ASN/Facebook-ASN.list
+          go run ./ combine -a ./ -i ../asn -o ../asn/combined
+
+      - name: Convert domain files to MRS
+        run: |
+          cd convert
+          go run ./ textfile -i ../geo/domain -o ../geo/domain -b domain
+
+      - name: Convert ipcidr files to MRS
+        run: |
+          cd convert
+          go run ./ textfile -i ../geo/ipcidr -o ../geo/ipcidr -b ipcidr
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add geo/ asn/
+          git commit -m "Convert ruleset to MRS format" || echo "No changes to commit"
+          git push origin mihomo

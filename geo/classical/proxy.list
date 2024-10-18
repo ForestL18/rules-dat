@@ -1,0 +1,18 @@
+# Name: Proxy
+# Include: Proxy
+# Behavior: classical
+
+#DOMAIN-SUFFIX,googleapis.cn
+#DOMAIN-SUFFIX,google-ohttp-relay-safebrowsing.fastly-edge.com
+#DOMAIN-SUFFIX,wallpaperengineapi.com
+DOMAIN-SUFFIX,ipinfo.io
+DOMAIN-SUFFIX,parsecusercontent.com
+DOMAIN-SUFFIX,parsec.app
+DOMAIN-SUFFIX,parsec.gg
+DOMAIN-SUFFIX,community.oneplus.com
+DOMAIN-SUFFIX,accounts.oneplus.com
+DOMAIN-SUFFIX,forumstatic.oneplusmobile.com
+DOMAIN-SUFFIX,c.mi.com
+DOMAIN-SUFFIX,fds.api.mi-img.com
+DOMAIN-SUFFIX,buy.mi.com
+DOMAIN,consent.trustarc.com

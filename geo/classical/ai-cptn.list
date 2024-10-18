@@ -2,6 +2,5 @@
 # Include: Copilot
 # Behavior: classical
 
-DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
-IP-CIDR, 160.79.104.0/23, no-resolve
-IP-CIDR6, 2607:6bc0::/48, no-resolve
+DOMAIN,copilot.microsoft.com
+

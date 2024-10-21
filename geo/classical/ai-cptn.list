@@ -1,0 +1,12 @@
+# Name: AIGC
+# Include: Copilot
+# Behavior: classical
+
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,studiostaticassetsprod.azureedge.net
+DOMAIN-SUFFIX,eu-mobile.events.data.microsoft.com
+DOMAIN-SUFFIX,browser.events.data.microsoft.com
+DOMAIN-SUFFIX,az764295.vo.msecnd.net

@@ -1,0 +1,7 @@
+# Name: access-not-jp
+# Include: access-not-jp
+# Behavior: classical
+
+DOMAIN-SUFFIX,javdb.com
+DOMAIN-SUFFIX,jdbstatic.com
+DOMAIN-SUFFIX,playno1.com

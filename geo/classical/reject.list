@@ -1,0 +1,34 @@
+# Name: Reject
+# Include: Install Audit, Avl, Anti-Fraud & OneTrack, Analytics, Ad
+# Behavior: classical
+
+## Install Audit & Avl & Anti-Fraud
+#DOMAIN-KEYWORD,avlyun
+DOMAIN-SUFFIX,avlyun.com
+# MIUI
+DOMAIN-SUFFIX,api.installer.xiaomi.com
+DOMAIN-SUFFIX,update.avlyun.sec.miui.com
+DOMAIN-SUFFIX,logupdate.avlyun.sec.miui.com
+DOMAIN-SUFFIX,virus-engine.sec.miui.com
+DOMAIN-SUFFIX,auth.be.sec.miui.com
+DOMAIN-SUFFIX,adv.sec.miui.com
+DOMAIN-SUFFIX,api.ad.xiaomi.com
+# OPPO
+DOMAIN-SUFFIX,api-audit.heytapmobi.com
+DOMAIN-SUFFIX,virusinfo-cloudscan-cn.heytapmobi.com
+DOMAIN-SUFFIX,app-sec-cn.heytapmobi.com
+
+## OneTrack & Analytics & Ad
+# MIUI
+DOMAIN-SUFFIX,data.mistat.xiaomi.com
+DOMAIN-SUFFIX,diagnosis.ad.xiaomi.com
+DOMAIN-SUFFIX,log.ad.xiaomi.com
+DOMAIN-SUFFIX,m.track.ad.xiaomi.com
+DOMAIN-SUFFIX,sdkconfig.ad.xiaomi.com
+# OPPO
+DOMAIN-SUFFIX,ads.heytapmobi.com
+DOMAIN-SUFFIX,ads.heytapmobile.com
+DOMAIN-SUFFIX,mdp-usertrace-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-cn.dc.heytapmobi.com
+DOMAIN-SUFFIX,classify-app-cn.allawnos.com
+DOMAIN-SUFFIX,classify-app-cn.allawntech.com

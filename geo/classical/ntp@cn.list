@@ -1,0 +1,13 @@
+# Name: ntp@cn
+# Include: ntp@cn
+# Behavior: classical
+
+DOMAIN,time.izatcloud.net
+DOMAIN,time.xtracloud.net
+DOMAIN-SUFFIX,cn.pool.ntp.org
+DOMAIN-SUFFIX,ntp.neu.edu.cn
+DOMAIN-SUFFIX,ntp.ntsc.ac.cn
+DOMAIN-SUFFIX,ntp.org.cn
+DOMAIN-REGEX,^ntp([1-7])?\.aliyun\.com$
+DOMAIN-REGEX,^ntp([1-5])?\.tencent\.com$
+DOMAIN-SUFFIX,time.windows.com

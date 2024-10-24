@@ -1,0 +1,13 @@
+# Name: DIRECT
+# Include: DIRECT
+# Behavior: classical
+
+# DOMAIN-REGEX,^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$
+# DOMAIN-SUFFIX,steamserver.net
+DOMAIN,oasisauth.h3c.com
+DOMAIN-SUFFIX,xiaoya.pro
+DOMAIN-SUFFIX,ip138.com
+DOMAIN-SUFFIX,ipify.org
+DOMAIN-SUFFIX,nostsync.one
+DOMAIN-SUFFIX,3gppnetwork.org
+DOMAIN-SUFFIX,weatheroffer.com

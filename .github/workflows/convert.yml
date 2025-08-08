@@ -2,7 +2,7 @@ name: Convert Ruleset
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "30 23 * * *"
 
 jobs:
   convert:
@@ -18,6 +18,16 @@ jobs:
           repository: ForestL18/rules-dat
           ref: mihomo
           path: rules
+          sparse-checkout: |
+            geo
+          sparse-checkout-cone-mode: true
+
+      - name: Checkout MetaCubeX Repo
+        uses: actions/checkout@v4
+        with:
+          repository: MetaCubeX/meta-rules-dat
+          ref: meta
+          path: rules/metacubex
           sparse-checkout: |
             geo
           sparse-checkout-cone-mode: true
@@ -48,7 +58,6 @@ jobs:
       - name: Convert DOMAIN files to MRS
         run: |
           mkdir -p ./converted-rules/geo/domain
-          wget 'https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.list' -O ./rules/geo/domain/ai-domain.list
           shopt -s nullglob
           cp rules/geo/domain/*.{list,yaml,yml} ./converted-rules/geo/domain
           ./convert/converter textfile -i ./rules/geo/domain/ -o ./converted-rules/geo/domain/ -b domain
@@ -63,8 +72,10 @@ jobs:
       - name: Commit and Push Changes
         run: |
           mkdir -p ./converted-rules/geo/classical
+          mkdir -p ./converted-rules/geo/metacubex
           shopt -s nullglob
           cp rules/geo/classical/*.{list,yaml,yml} ./converted-rules/geo/classical/
+          cp -r rules/metacubex/geo/geo* ./converted-rules/geo/metacubex/
           cd converted-rules
           git init
           git config --local user.name "github-actions[bot]"

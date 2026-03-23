@@ -59,14 +59,15 @@ jobs:
         run: |
           mkdir -p ./converted-rules/geo/domain
           shopt -s nullglob
-          cp rules/geo/domain/*.{list,yaml,yml} ./converted-rules/geo/domain
+          cp ./rules/geo/domain/*.{list,yaml,yml} ./converted-rules/geo/domain
           ./convert/converter textfile -i ./rules/geo/domain/ -o ./converted-rules/geo/domain/ -b domain
 
       - name: Convert IPCIDR files to MRS
         run: |
           mkdir -p ./converted-rules/geo/ipcidr
+          wget 'https://core.telegram.org/resources/cidr.txt' -O ./rules/geo/ipcidr/telegram-ip.list
           shopt -s nullglob
-          cp rules/geo/ipcidr/*.{list,yaml,yml} ./converted-rules/geo/ipcidr
+          cp ./rules/geo/ipcidr/*.{list,yaml,yml} ./converted-rules/geo/ipcidr
           ./convert/converter textfile -i ./rules/geo/ipcidr/ -o ./converted-rules/geo/ipcidr/ -b ipcidr
 
       - name: Commit and Push Changes

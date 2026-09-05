@@ -1,0 +1,14 @@
+# Name: direct
+# Include: direct
+# Behavior: classical
+
+DOMAIN,oasisauth.h3c.com
+DOMAIN-SUFFIX,xiaoya.pro
+DOMAIN-SUFFIX,ip138.com
+DOMAIN-SUFFIX,ipify.org
+DOMAIN-SUFFIX,3gppnetwork.org
+DOMAIN-SUFFIX,weatheroffer.com
+DOMAIN-SUFFIX,nsmao.net
+#DOMAIN-SUFFIX,synology.com
+#DOMAIN-SUFFIX,synologyupdate.com
+#DOMAIN-SUFFIX,synologydownload.com

@@ -1,0 +1,47 @@
+# Name: reject
+# Include: Install Audit, Avl, Anti-Fraud & OneTrack, Analytics, Ad
+# Behavior: classical
+
+## Install Audit & Avl & Anti-Fraud && Track & Analytics & Ad
+#DOMAIN-KEYWORD,avlyun
+DOMAIN-SUFFIX,avlyun.com
+# MIUI
+DOMAIN-SUFFIX,api.installer.xiaomi.com
+DOMAIN-SUFFIX,update.avlyun.sec.miui.com
+DOMAIN-SUFFIX,logupdate.avlyun.sec.miui.com
+DOMAIN-SUFFIX,virus-engine.sec.miui.com
+DOMAIN-SUFFIX,auth.be.sec.miui.com
+DOMAIN-SUFFIX,adv.sec.miui.com
+DOMAIN-SUFFIX,api.ad.xiaomi.com
+DOMAIN-SUFFIX,data.mistat.xiaomi.com
+DOMAIN-SUFFIX,diagnosis.ad.xiaomi.com
+DOMAIN-SUFFIX,log.ad.xiaomi.com
+DOMAIN-SUFFIX,m.track.ad.xiaomi.com
+DOMAIN-SUFFIX,sdkconfig.ad.xiaomi.com
+# OPPO
+DOMAIN-SUFFIX,api-audit.heytapmobi.com
+DOMAIN-SUFFIX,virusinfo-cloudscan-cn.heytapmobi.com
+DOMAIN-SUFFIX,app-sec-cn.heytapmobi.com
+DOMAIN-SUFFIX,push-ads-cn.heytapmobi.com
+DOMAIN-WILDCARD,obus-dc*-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-cn.dc.heytapmobi.com
+#DOMAIN-SUFFIX,api-cn.cdo.heytapmobi.com
+#DOMAIN-SUFFIX,api-gl.cdo.heytapmobi.com
+#DOMAIN-SUFFIX,iopen-gamecenter.heytapmobi.com
+#DOMAIN-SUFFIX,cloudconf-app-cn.heytapmobi.com
+DOMAIN-SUFFIX,mdp-usertrace-cn.heytapmobi.com
+DOMAIN-SUFFIX,ads.heytapmobi.com
+DOMAIN-SUFFIX,ads.heytapmobile.com
+#DOMAIN-SUFFIX,appconf-ocs.heytapdownload.com
+#DOMAIN-SUFFIX,mdp-appconf-cn.heytapdownload.com
+DOMAIN-SUFFIX,ads.oppomobile.com
+#DOMAIN-SUFFIX,api.open.oppomobile.com
+DOMAIN-SUFFIX,classify-app-cn.allawntech.com
+DOMAIN-SUFFIX,rcpc-sdk-access.m.qq.com
+DOMAIN-SUFFIX,rcpc-sdk-access-v6.m.qq.com
+DOMAIN-SUFFIX,msch.f.360.cn
+#DOMAIN-SUFFIX,euler-saas-cn.heytapmobi.com
+
+# Others
+DOMAIN-SUFFIX,px.effirst.com
+DOMAIN,basic-static-server.infinitynewtab.com

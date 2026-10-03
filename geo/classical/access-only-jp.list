@@ -1,0 +1,20 @@
+# Name: access-only-jp
+# Include: access-only-jp domains
+# Behavior: classical
+
+DOMAIN-SUFFIX,prestige-av.com
+DOMAIN-SUFFIX,mgstage.com
+DOMAIN-SUFFIX,sod.co.jp
+DOMAIN-SUFFIX,faleno.jp
+DOMAIN-SUFFIX,faleno.net
+DOMAIN-SUFFIX,dahlia-av.jp
+DOMAIN-SUFFIX,duga.jp
+DOMAIN-SUFFIX,av-event.jp
+DOMAIN-SUFFIX,arzon.jp
+DOMAIN-SUFFIX,fanza.jp
+DOMAIN-SUFFIX,p-smith.com
+DOMAIN-SUFFIX,navismithapis.com
+DOMAIN-SUFFIX,navismithapis-cdn.com
+DOMAIN-SUFFIX,pandalive.co.jp
+#DOMAIN-SUFFIX,pandalive.co.kr
+#DOMAIN-SUFFIX,live-video.net

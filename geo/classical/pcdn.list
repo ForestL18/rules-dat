@@ -1,0 +1,51 @@
+# Name: pcdn
+# Include: pcdn domains
+# Behavior: classical
+
+# B站
+DOMAIN-SUFFIX,mcdn.bilivideo.cn
+DOMAIN-SUFFIX,mcdn.bilivideo.com
+DOMAIN-SUFFIX,ppio.bilivideo.com
+DOMAIN-SUFFIX,kodo.bilivideo.com
+DOMAIN-SUFFIX,mountaintoys.cn
+DOMAIN-SUFFIX,szbdyd.com
+# 腾讯
+DOMAIN-SUFFIX,hcdn.video.qq.com
+DOMAIN-SUFFIX,pcdn.video.qq.com
+DOMAIN-SUFFIX,vodlive.qq.com
+DOMAIN-SUFFIX,iwan-s.video.qq.com
+DOMAIN-SUFFIX,gdt.qq.com
+DOMAIN-SUFFIX,cm.l.qq.com
+DOMAIN-SUFFIX,isure6.stream.qqmusic.qq.com
+# 爱奇艺
+DOMAIN-SUFFIX,hcdn.qiyi.com
+DOMAIN-SUFFIX,pdata.video.qiyi.com
+DOMAIN-SUFFIX,cachecdn.v.iqiyi.com
+DOMAIN-SUFFIX,meta-cdn.video.iq.com
+DOMAIN-SUFFIX,tpa-hcdn.iqiyi.com
+DOMAIN-SUFFIX,data6.video.iqiyi.com
+# 优酷
+DOMAIN-SUFFIX,atm.youku.com
+DOMAIN-SUFFIX,Fvid.atm.youku.com
+DOMAIN-SUFFIX,html.atm.youku.com
+DOMAIN-SUFFIX,valb.atm.youku.com
+DOMAIN-SUFFIX,valf.atm.youku.com
+DOMAIN-SUFFIX,static.atm.youku.com
+DOMAIN-SUFFIX,valc.atm.youku.com
+# 字节
+DOMAIN-SUFFIX,pull-rtmp-l11.ixigua.com
+DOMAIN-SUFFIX,push-rtmp-l1.ixigua.com
+DOMAIN-SUFFIX,pull-hs-f5-hot.flive.douyincdn.com
+# 斗鱼
+DOMAIN-SUFFIX,p2p.douyucdn.cn
+# 酷狗
+DOMAIN-SUFFIX,trackercdn.kugou.com
+DOMAIN-SUFFIX,mobiletrackercdn.kugou.com
+DOMAIN-SUFFIX,d.kugou.com
+# 网易云
+DOMAIN-SUFFIX,163jiasu.com
+DOMAIN-SUFFIX,sf.163.com
+# 其他
+DOMAIN-SUFFIX,p-cdn.com
+DOMAIN-SUFFIX,pscdn.co
+DOMAIN-SUFFIX,p.scdn.co

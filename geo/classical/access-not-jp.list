@@ -1,0 +1,10 @@
+# Name: access-not-jp
+# Include: access-not-jp domains
+# Behavior: classical
+
+DOMAIN-SUFFIX,javdb.com
+DOMAIN-SUFFIX,jdbstatic.com
+DOMAIN-SUFFIX,javmenu.net
+DOMAIN-SUFFIX,2ktdfje.top
+DOMAIN-SUFFIX,javrocket.top
+DOMAIN-SUFFIX,playno1.com

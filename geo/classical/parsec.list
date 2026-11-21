@@ -1,0 +1,7 @@
+# Name: parsec
+# Include: parsec domains
+# Behavior: classical
+
+DOMAIN-SUFFIX,parsecusercontent.com
+DOMAIN-SUFFIX,parsec.app
+DOMAIN-SUFFIX,parsec.gg

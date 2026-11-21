@@ -16,5 +16,6 @@ DOMAIN-SUFFIX,p-smith.com
 DOMAIN-SUFFIX,navismithapis.com
 DOMAIN-SUFFIX,navismithapis-cdn.com
 DOMAIN-SUFFIX,pandalive.co.jp
-#DOMAIN-SUFFIX,pandalive.co.kr
-#DOMAIN-SUFFIX,live-video.net
+DOMAIN-SUFFIX,pandalive.co.kr
+DOMAIN-SUFFIX,live-video.net
+DOMAIN-SUFFIX,yimg.jp
